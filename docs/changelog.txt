@@ -1,5 +1,10 @@
 Changelog for Robokassa.
 
+1.1.0 pl
+==============
+- PSR-2 code format.
+- Added test payments.
+
 1.0.2 pl1
 ==============
 - Fixed receive of payments.

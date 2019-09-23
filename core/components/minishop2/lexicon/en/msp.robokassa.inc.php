@@ -23,3 +23,6 @@ $_lang['setting_ms2_payment_rbks_success_id_desc'] = 'The customer will be sent 
 
 $_lang['setting_ms2_payment_rbks_failure_id'] = 'Robokassa failure page id';
 $_lang['setting_ms2_payment_rbks_failure_id_desc'] = 'The customer will be sent to this page if something went wrong. It is recommended to specify the id of the page with the shopping cart to order output.';
+
+$_lang['setting_ms2_payment_rbks_test_mode'] = 'Test mode';
+$_lang['setting_ms2_payment_rbks_test_mode'] = 'Enable this if you want tot test payments';

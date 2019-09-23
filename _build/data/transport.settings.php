@@ -35,13 +35,15 @@ $tmp = array(
 	'success_id' => array(
 		'xtype' => 'numberfield',
 		'value' => 0,
-
 	),
 	'failure_id' => array(
 		'xtype' => 'numberfield',
 		'value' => 0,
 	),
-
+	'test_mode' => array(
+		'xtype' => 'combo-boolean',
+		'value' => false,
+	),
 );
 
 foreach ($tmp as $k => $v) {
