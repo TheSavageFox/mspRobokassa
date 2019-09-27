@@ -12,7 +12,7 @@ $_lang['setting_ms2_payment_rbks_pass1_desc'] = 'Used for initialize interface o
 $_lang['setting_ms2_payment_rbks_pass2'] = 'Password #2';
 $_lang['setting_ms2_payment_rbks_pass2_desc'] = 'Used for the interface of the payment notification.';
 
-$_lang['setting_ms2_payment_rbks_currency'] = 'The proposed payment currency';
+$_lang['setting_ms2_payment_rbks_currency'] = 'The proposed method of payment';
 $_lang['setting_ms2_payment_rbks_currency_desc'] = 'The customer can change it in the payment process. ';
 
 $_lang['setting_ms2_payment_rbks_culture'] = 'Language of Robokassa';
@@ -25,4 +25,13 @@ $_lang['setting_ms2_payment_rbks_failure_id'] = 'Robokassa failure page id';
 $_lang['setting_ms2_payment_rbks_failure_id_desc'] = 'The customer will be sent to this page if something went wrong. It is recommended to specify the id of the page with the shopping cart to order output.';
 
 $_lang['setting_ms2_payment_rbks_test_mode'] = 'Test mode';
-$_lang['setting_ms2_payment_rbks_test_mode'] = 'Enable this if you want tot test payments';
+$_lang['setting_ms2_payment_rbks_test_mode_desc'] = 'Enable this if you want tot test payments';
+
+$_lang['setting_ms2_payment_rbks_test_pass1'] = 'Test password #1';
+$_lang['setting_ms2_payment_rbks_test_pass1_desc'] = 'Used for initialize interface of payment.';
+
+$_lang['setting_ms2_payment_rbks_test_pass2'] = 'Test password #2';
+$_lang['setting_ms2_payment_rbks_test_pass2_desc'] = 'Used for the interface of the payment notification.';
+
+$_lang['setting_ms2_payment_rbks_receipt'] = 'Fiscalization';
+$_lang['setting_ms2_payment_rbks_receipt_desc'] = 'Operating mode for solutions - Cloudy. Cash register. Robocheck.';

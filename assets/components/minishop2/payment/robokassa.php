@@ -21,9 +21,13 @@ $order = $modx->newObject('msOrder');
 /** @var msPaymentInterface|Robokassa $handler */
 $handler = new Robokassa($order);
 
-if (!empty($_REQUEST['SignatureValue']) && !empty($_REQUEST['InvId']) && empty($_REQUEST['action'])) {
+if (!empty($_REQUEST['SignatureValue']) && !empty($_REQUEST['InvId'])) {
     if ($order = $modx->getObject('msOrder', $_REQUEST['InvId'])) {
-        $handler->receive($order, $_REQUEST);
+        if (empty($_REQUEST['action'])) {
+            $handler->answer($order, $_REQUEST);
+        } elseif (!empty($_REQUEST['action']) && $_REQUEST['action'] == 'success') {
+            $handler->receive($order, $_REQUEST);
+        }
     } else {
         $modx->log(modX::LOG_LEVEL_ERROR,
             '[miniShop2:Robokassa] Could not retrieve order with id ' . $_REQUEST['LMI_PAYMENT_NO']);

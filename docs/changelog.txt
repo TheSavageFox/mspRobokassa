@@ -1,5 +1,14 @@
 Changelog for Robokassa.
 
+1.2.0 pl
+==============
+- Added test keys
+- Added fiscalization
+- Added check at the 'success' stage
+- The check takes into account delivery
+- Reworked method of receiving payment link via POST
+- Minor edits
+
 1.1.0 pl
 ==============
 - PSR-2 code format.

@@ -12,7 +12,7 @@ $_lang['setting_ms2_payment_rbks_pass1_desc'] = 'Используется инт
 $_lang['setting_ms2_payment_rbks_pass2'] = 'Пароль №2';
 $_lang['setting_ms2_payment_rbks_pass2_desc'] = 'Используется интерфейсом оповещения о платеже, XML-интерфейсами.';
 
-$_lang['setting_ms2_payment_rbks_currency'] = 'Предлагаемая валюта платежа';
+$_lang['setting_ms2_payment_rbks_currency'] = 'Предлагаемый способ оплаты';
 $_lang['setting_ms2_payment_rbks_currency_desc'] = 'Пользователь может изменить ее в процессе оплаты. ';
 
 $_lang['setting_ms2_payment_rbks_culture'] = 'Язык Robokassa';
@@ -22,7 +22,16 @@ $_lang['setting_ms2_payment_rbks_success_id'] = 'Страница успешно
 $_lang['setting_ms2_payment_rbks_success_id_desc'] = 'Пользователь будет отправлен на эту страницу после завершения оплаты. Рекомендуется указать id страницы с корзиной, для вывода заказа.';
 
 $_lang['setting_ms2_payment_rbks_failure_id'] = 'Страница отказа от оплаты Robokassa';
-$_lang['setting_ms2_payment_rbks_failure_id_desc'] = 'Пользователь будет отправлен на эту страницу при неудачной оплате. Рекомендуется указать id страницы с корзиной, для вывода заказа';
+$_lang['setting_ms2_payment_rbks_failure_id_desc'] = 'Пользователь будет отправлен на эту страницу при неудачной оплате. Рекомендуется указать id страницы с корзиной, для вывода заказа.';
 
 $_lang['setting_ms2_payment_rbks_test_mode'] = 'Тестовый режим';
-$_lang['setting_ms2_payment_rbks_test_mode'] = 'Активируйте эту настройку, если ваш магазин работает в тестовом режиме';
+$_lang['setting_ms2_payment_rbks_test_mode_desc'] = 'Переключает оплату в рещим тестирования.';
+
+$_lang['setting_ms2_payment_rbks_test_pass1'] = 'Тестовый пароль №1';
+$_lang['setting_ms2_payment_rbks_test_pass1_desc'] = 'Используется интерфейсом инициализации оплаты.';
+
+$_lang['setting_ms2_payment_rbks_test_pass2'] = 'Тестовый пароль №2';
+$_lang['setting_ms2_payment_rbks_test_pass2_desc'] = 'Используется интерфейсом оповещения о платеже, XML-интерфейсами.';
+
+$_lang['setting_ms2_payment_rbks_receipt'] = 'Фискализация';
+$_lang['setting_ms2_payment_rbks_receipt_desc'] = 'Режим работы для решений - Облачное. Кассовое. Робочеки.';
