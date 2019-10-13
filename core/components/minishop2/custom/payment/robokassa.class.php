@@ -105,7 +105,7 @@ class Robokassa extends msPaymentHandler implements msPaymentInterface
                 $items[] = array(
                     'name' => mb_substr(trim($name), 0, 63, 'UTF-8'),
                     'quantity' => $item->get('count'),
-                    'sum' => str_replace(',', '.', $item->get('price')),
+                    'sum' => str_replace(',', '.', $item->get('price')) * $item->get('count'),
                     // 'payment_method' => 'full_prepayment',
                     // 'payment_object' => 'commodity',
                     'tax' => 'none'
@@ -117,7 +117,7 @@ class Robokassa extends msPaymentHandler implements msPaymentInterface
 
             if ($delivery->get('price') > 0) {
                 $items[] = array(
-                    'name' => mb_substr(trim($delivery->get('name')), 0, 63, 'UTF-8'),
+                    'name' => mb_substr(trim($this->modx->lexicon('ms2_delivery') . ' "' . $delivery->get('name') . '"'), 0, 63, 'UTF-8'),
                     'quantity' => 1,
                     'sum' => $delivery->get('price'),
                     // 'payment_method' => 'full_prepayment',
@@ -274,7 +274,7 @@ class Robokassa extends msPaymentHandler implements msPaymentInterface
      */
     public function paymentDebag($text, $request = array())
     {
-        $this->modx->log(modX::LOG_LEVEL_DEBUG,
+        $this->modx->log(modX::LOG_LEVEL_ERROR,
             '[miniShop2:Robokassa] ' . $text . ', request: ' . print_r($request, 1));
     }
 }
