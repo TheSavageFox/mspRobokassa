@@ -1,5 +1,9 @@
 Changelog for Robokassa.
 
+1.2.1 pl
+==============
+- Added parameters for displaying status.
+
 1.2.0 pl
 ==============
 - Added test keys

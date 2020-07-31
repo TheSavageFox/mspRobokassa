@@ -40,9 +40,11 @@ if (!empty($_REQUEST['InvId'])) {
 
 $success = $failure = $modx->getOption('site_url');
 if ($id = $modx->getOption('ms2_payment_rbks_success_id', null, 0)) {
+	$params['status'] = 1;
     $success = $modx->makeUrl($id, $context, $params, 'full');
 }
 if ($id = $modx->getOption('ms2_payment_rbks_failure_id', null, 0)) {
+	$params['status'] = 2;
     $failure = $modx->makeUrl($id, $context, $params, 'full');
 }
 
